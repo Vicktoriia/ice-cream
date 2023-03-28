@@ -1,0 +1,263 @@
+
+.advantages {
+    margin-left: auto;
+    margin-right: auto;
+    background: $bg-section-secondary;
+    padding-bottom: 60px;
+    &__icon {
+        fill: currentColor;
+      }
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;  
+
+  @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -25px;
+      margin-left: -25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      margin-left: -110px;
+  }
+  
+}
+
+
+.advantages-list > .advantages-list__items {
+
+  @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3.05 - 25px);
+      margin-left: 25px;
+      margin-top: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 130px);
+      margin-left: 110px;
+    }
+}
+
+.advantages-list__items {
+    list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+    .advantages-list__items:not(:first-child) {
+        margin-top: 32px;
+    }
+}
+
+
+.advantages-list__items::before {
+    display: inline-block;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.advantages-list__items.icon-milk::before {
+    height: 50px;
+    width: 33px;
+    background-image: url(../images/advantages/icon-milk_mob.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/icon-milk_mob@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/icon-milk_mob@3x.png);
+    }
+
+    @media screen and(min-width:768px) {
+      background-image: url(../images/advantages/icon-milk_tab.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/icon-milk_tab@2x.png);
+      }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url(../images/advantages/icon-milk_tab@3x.png);
+      }
+    }
+
+    @media screen and(min-width:1200px) {
+      background-image: url(../images/advantages/icon-milk_dt.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/icon-milk_dt@2x.png);
+      }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url(../images/advantages/icon-milk_dt@3x.png);
+      }
+    }
+}
+
+.advantages-list__items.icon-apple::before {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/advantages/icon-apples_mob.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/icon-apples_mob@2x.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url(../images/advantages/icon-apples_mob@3x.png);
+  }
+
+  @media screen and(min-width:768px) {
+    background-image: url(../images/advantages/icon-apples_tab.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/icon-apples_tab@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/icon-apples_tab@3x.png);
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    background-image: url(../images/advantages/icon-apples_dt.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/icon-apples_dt@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/icon-apples_dt@3x.png);
+    }
+  }
+}
+
+
+.advantages-list__items.icon-icecreem::before {
+    height: 50px;
+    width: 44px;
+    background-image: url(../images/advantages/icon-icecreem_mob.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/icon-icecreem_mob@2x.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url(../images/advantages/icon-icecreem_mob@3x.png);
+  }
+
+  @media screen and(min-width:768px) {
+    background-image: url(../images/advantages/icon-icecreem_tab.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/icon-icecreem_tab@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/icon-icecreem_tab@3x.png);
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    background-image: url(../images/advantages/icon-icecreem_dt.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/icon-icecreem_dt@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/icon-icecreem_dt@3x.png);
+    }
+  }
+}
+
+.advantages-list__items-text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent-main;
+  margin-top: 25px;
+
+  @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 4 - 25px);
+      font-size: 48px;
+      line-height: 1.15;
+      text-transform: none;
+      margin-top: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: 1.14;
+      margin-top: 40px;
+  }
+}
+
+.advantages-list__items-descr {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.70;
+    color: #000000;
+    width: 72%;
+    max-width: 300px;
+    margin-top: 25px;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.74;
+      margin-top: 13px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+      margin-top: 16px;
+    }
+}
